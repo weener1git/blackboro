@@ -178,7 +178,7 @@ function loadFirebase(){
         },document.head.appendChild(database);
     },document.head.appendChild(r);
 }
-if (location.protocol !== 'https:' && location.hostname === '77games.io') {
+if (location.hostname !== '77games.io') {
     window.addEventListener('load', function() {
         addCss();
         addBtnHome();
