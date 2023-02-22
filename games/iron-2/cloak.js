@@ -6,7 +6,7 @@ function addCss(){
         z-index: 9999;
         top: 61px;
         left: 0;
-        width: 150px;
+        width: 160px;
         height: 50px;
         background: #fff;
         border-radius: 0 290486px 290486px 0;
@@ -155,8 +155,7 @@ function addBtnHome(){
     e.className = 'in-game-button';
     e.id = 'inGame';
     e.innerHTML = `
-    <svg class="svg-inline--fa fa-chevron-left fa-w-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg><!-- <i class="fas fa-chevron-left"></i> Font Awesome fontawesome.com -->
-    <img src="https://blackboro.github.io/games/iron-2/icon36.png" width="36" height="36" alt="Logo">`;
+    <img src="https://blackboro.github.io/games/logo-77games.png" width="150" height="43" alt="Logo">`;
     document.getElementsByTagName('body')[0].appendChild(e);
 }
 
