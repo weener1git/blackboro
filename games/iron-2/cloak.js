@@ -6,7 +6,7 @@ function addCss(){
         z-index: 9999;
         top: 61px;
         left: 0;
-        width: 75px;
+        width: 150px;
         height: 50px;
         background: #fff;
         border-radius: 0 290486px 290486px 0;
