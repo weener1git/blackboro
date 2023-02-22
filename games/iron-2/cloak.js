@@ -33,7 +33,8 @@ function addCss(){
     
     button.in-game-button img {
         pointer-events: none;
-        width: 30px
+        width: 150px;
+		heigt:43px;
     }
     
     button.in-game-button:active {
