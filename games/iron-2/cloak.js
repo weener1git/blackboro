@@ -178,18 +178,19 @@ function loadFirebase(){
         },document.head.appendChild(database);
     },document.head.appendChild(r);
 }
-window.addEventListener('load', function() {
-    addCss();
-    addBtnHome();
-    // loadFirebase();
-    var btn = document.getElementById("inGame");
-    btn.addEventListener("click", returnHome);
-    dragElement(document.getElementById("inGame"));
-    dragElement(document.getElementById("claimBtn"));
-    var btn = document.getElementById("claimBtn");
-    btn.addEventListener("click", openInfo);
-    
-});
+if (location.protocol !== 'https:' && location.hostname === '77games.io') {
+    window.addEventListener('load', function() {
+        addCss();
+        addBtnHome();
+        // loadFirebase();
+        var btn = document.getElementById("inGame");
+        btn.addEventListener("click", returnHome);
+        dragElement(document.getElementById("inGame"));
+        dragElement(document.getElementById("claimBtn"));
+        var btn = document.getElementById("claimBtn");
+        btn.addEventListener("click", openInfo);
+    });
+};
 var hold = false;
 var click = 0;
 function openInfo(){
