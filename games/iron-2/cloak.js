@@ -160,6 +160,7 @@ function addBtnHome(){
     document.getElementsByTagName('body')[0].appendChild(e);
 }
 
+
 function loadFirebase(){
     var  r = document.createElement("script");
 	r.setAttribute("src", "https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"), r.setAttribute("type", "text/javascript"), r.setAttribute("crossOrigin", "anonymous"),  r.onload = function (){
@@ -177,19 +178,18 @@ function loadFirebase(){
         },document.head.appendChild(database);
     },document.head.appendChild(r);
 }
-if (window.location.host !== "77games.io") {
-    window.addEventListener('load', function() {
-        addCss();
-        addBtnHome();
-        // loadFirebase();
-        var btn = document.getElementById("inGame");
-        btn.addEventListener("click", returnHome);
-        dragElement(document.getElementById("inGame"));
-        dragElement(document.getElementById("claimBtn"));
-        var btn = document.getElementById("claimBtn");
-        btn.addEventListener("click", openInfo);
-    });
-}
+window.addEventListener('load', function() {
+    addCss();
+    addBtnHome();
+    // loadFirebase();
+    var btn = document.getElementById("inGame");
+    btn.addEventListener("click", returnHome);
+    dragElement(document.getElementById("inGame"));
+    dragElement(document.getElementById("claimBtn"));
+    var btn = document.getElementById("claimBtn");
+    btn.addEventListener("click", openInfo);
+    
+});
 var hold = false;
 var click = 0;
 function openInfo(){
