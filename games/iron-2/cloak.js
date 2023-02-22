@@ -156,7 +156,7 @@ function addBtnHome(){
     e.className = 'in-game-button';
     e.id = 'inGame';
     e.innerHTML = `
-    <img src="https://blackboro.github.io/games/logo-77games.png" width="150" height="43" alt="Logo">`;
+    <img src="https://blackboro.github.io/games/logo-77games.png" width="150px" height="43px" alt="Logo">`;
     document.getElementsByTagName('body')[0].appendChild(e);
 }
 
