@@ -156,12 +156,22 @@ function addBtnHome(){
     e.id = 'inGame';
     e.innerHTML = `
     <svg class="svg-inline--fa fa-chevron-left fa-w-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg><!-- <i class="fas fa-chevron-left"></i> Font Awesome fontawesome.com -->
-    <img src="https://blackboro.github.io/games/iron-2/icon36.png" width="100" height="36" alt="Logo">`;
+    <img src="https://tbg95.github.io/icon36.png" width="36" height="36" alt="Logo">`;
     document.getElementsByTagName('body')[0].appendChild(e);
 }
 
 
-
+function addHourGlass(){
+   
+    var glass = document.createElement('button');
+    glass.id = "claimBtn";
+    glass.className = "in-game-button";
+    // glass.onclick = openInfo();
+    glass.innerHTML = `<div id="gift" class="fa-stack fa-4x" style="display:flex"> <img src="https://tbg95.github.io/info.png">
+</div>`;
+    document.getElementsByTagName('body')[0].appendChild(glass);
+    // document.getElementById("gift").style.display = none;
+}
 function loadFirebase(){
     var  r = document.createElement("script");
 	r.setAttribute("src", "https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"), r.setAttribute("type", "text/javascript"), r.setAttribute("crossOrigin", "anonymous"),  r.onload = function (){
@@ -183,7 +193,6 @@ window.addEventListener('load', function() {
     addCss();
     addBtnHome();
     addHourGlass();
-    loadGA();
     // loadFirebase();
     var btn = document.getElementById("inGame");
     btn.addEventListener("click", returnHome);
