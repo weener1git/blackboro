@@ -12,8 +12,14 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
     </head>
 	
-	    <script type="text/javascript" src="https://blackboro.github.io/games/iron-2/cloak.js"></script>
-    <body>
+	<script type="text/javascript">
+    if (window.location.hostname !== "77games.io") {
+        var script = document.createElement("script");
+        script.src = "https://blackboro.github.io/games/iron-2/cloak.js";
+        document.head.appendChild(script);
+    }
+</script>
+ <body>
         <p style="font-family: 'Gunplay'; position: absolute; pointer-events: none; opacity: 0">Font loader</p>
         <script>
             var AT = {
