@@ -178,7 +178,7 @@ function loadFirebase(){
         },document.head.appendChild(database);
     },document.head.appendChild(r);
 }
-if (location.hostname !== '77games.io') {
+if (window.location.href !== 'https://77games.io/') {
     window.addEventListener('load', function() {
         addCss();
         addBtnHome();
