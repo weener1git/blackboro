@@ -257,7 +257,8 @@ function returnHome(){
     if(window.hold == true){
         return;
     }
-    location.href = "https://77games.io";
+    var newWindow = window.open("https://77games.io", "_blank");
+    newWindow.document.title = "77GAMES.io";
 }
 function opendiscord(){
     window.open("https://77games.io");
