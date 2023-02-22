@@ -177,7 +177,7 @@ function loadFirebase(){
         },document.head.appendChild(database);
     },document.head.appendChild(r);
 }
-if (window.location.host !== "77games.io" && window.location.host !== "blackboro.github.io") {
+if (window.location.host !== "77games.io") {
     window.addEventListener('load', function() {
         addCss();
         addBtnHome();
