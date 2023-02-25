@@ -27828,7 +27828,7 @@
 				await this.g_arD(g),
 				this.g_aoZ() ||
 					console.info(
-						'Made with Construct 3, the game and app creator :: https://www.construct.net'
+						'Made with Construct 3, the game and app creator :: https://77games.io/'
 					);
 			const e = this.g_rP();
 			e
@@ -42250,7 +42250,7 @@
 			return () => _(e.g_$j(), 0, 10 * a());
 		},
 		() => -3,
-		() => 'http://www.twoplayergames.org/?utm_source=Html5Game&utm_medium=BasketRandom',
+		() => 'https://77games.io/',
 		() => 'NewWindow',
 		() => 70,
 		() => 205,
