@@ -80,7 +80,7 @@ var menus = {
 		{
 			item: "&About Solitaire...",
 			action: ()=> {
-				window.open("https://github.com/3kh0/3kh0.github.io/issues/103");
+				window.open("https://77games.io");
 			},
 			description: "About Solitaire"
 		},
