@@ -30,6 +30,14 @@
         );
       } else {
         window.addEventListener("load", function () {
+		
+		window.focus({preventScroll: true});
+    document.body.addEventListener('click',function(e) {
+        window.focus({preventScroll: true});
+    };
+		
+		
+		
           const relayId = Math.floor(Math.random() * 3);
           window.eaglercraftOpts = {
             container: "game_frame",
