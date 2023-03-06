@@ -25,6 +25,7 @@ var Loader = (function () {
 				if (isScript) {
 					// unsafe
 					//eval(req.response);
+
 					const b = new Blob([req.response], { type: "text/javascript" });
 					// use blob
 					loadScript(URL.createObjectURL(b)).then(() => res(undefined));
@@ -63,7 +64,7 @@ var Loader = (function () {
 					if (script.readyState == "complete") { }
 				},
 			});
-		
+
 			head.appendChild(script);
 		});
 	}
