@@ -44,6 +44,58 @@ function addCss(){
     button.in-game-button[attr-active=true] {
         transform: translateX(0)
     }
+	
+	
+	
+	button.in-game-button2 {
+        position: absolute;
+		top:0px;
+		text-align:center;
+        z-index: 10000;
+        width: 100%;
+        height: 100%;
+        background: #grey;
+		text-size:30px;
+        color: #000;
+        border-radius:10px;
+    }
+    
+    button.in-game-button2 svg {
+        pointer-events: none;
+        color: #b5b5b5;
+        margin-right: .625rem;
+        display: inline-block
+    }
+    
+    button.in-game-button2 img {
+        pointer-events: none;
+        width: 300px;
+		heigt:100px;
+    }
+    
+    button.in-game-button2:active {
+        background: #1ec2e5
+    }
+    
+    button.in-game-button2[attr-active=true] {
+        transform: translateX(0)
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     
     @media(max-height: 350px) and (orientation:landscape) {
         button.in-game-button[attr-active=true] {
@@ -151,13 +203,23 @@ function addCss(){
     `;  
     document.getElementsByTagName('head')[0].appendChild(e);
 }
-function addBtnHome(){
+function addBtnHome() {
+   var referrer = document.referrer.toLowerCase();
+  if (referrer.indexOf("https://66ezgames.github.io/") !== -1) {
+    var e = document.createElement('button');
+    e.className = 'in-game-button2'; // change class to 'in-game-button2'
+    e.id = 'inGame';
+    e.innerHTML = `
+      <img src="https://66games.io/playbutton.png" width="300px" height="162px" alt="PLAY GAME UNBLOCKED">`;
+    document.getElementsByTagName('body')[0].appendChild(e);
+  } else {
     var e = document.createElement('button');
     e.className = 'in-game-button';
     e.id = 'inGame';
     e.innerHTML = `
-    <img src="https://blackboro.github.io/games/logo-77games.png" width="130px" height="35px" alt="77GAMES.io">`;
+      <img src="https://blackboro.github.io/games/logo-77games.png" width="130px" height="35px" alt="77GAMES.io">`;
     document.getElementsByTagName('body')[0].appendChild(e);
+  }
 }
 
 
@@ -178,15 +240,13 @@ function loadFirebase(){
         },document.head.appendChild(database);
     },document.head.appendChild(r);
 }
-if (window.location.href !== 'https://77games.io/') {
-    window.addEventListener('load', function() {
-        addCss();
-        addBtnHome();
-        // loadFirebase();
-        var btn = document.getElementById("inGame");
-        btn.addEventListener("click", returnHome);
-    });
-};
+window.addEventListener('load', function() {
+  addCss();
+  addBtnHome();
+  var btn = document.getElementById("inGame");
+  btn.addEventListener("click", returnHome);
+});
+
 var hold = false;
 var click = 0;
 function returnHome(){
