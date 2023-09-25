@@ -1,4 +1,6 @@
-<img src="https://github.com/blackboro/blackboro.github.io/blob/main/logogithub.png">
+<img src="https://github.com/blackboro/blackboro.github.io/blob/main/logogithub.png" width="600px" height="250px" >
+
+
 ++ UPDATES REGARDING UNBLOCKED GAMES WOULD BE POSTED HERE..
 
 Play ALL THE BEST UNBLOCKED GAMES Unblocked Games at fast speed 1gps on proxy servers:
